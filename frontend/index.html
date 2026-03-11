@@ -1,0 +1,11 @@
+<h1>Three Tier DevOps App</h1>
+
+<button onclick="loadData()">Connect Backend</button>
+
+<script>
+function loadData(){
+fetch("http://EC2-PUBLIC-IP:8080")
+.then(res => res.text())
+.then(data => alert(data))
+}
+</script>
